@@ -1,0 +1,13 @@
+.layout {
+  border: 5px solid black;
+  min-height: 100vh;
+  height: auto;
+}
+
+.dinamic-content {
+  min-height: 80vh;
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
