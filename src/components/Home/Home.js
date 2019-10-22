@@ -45,6 +45,9 @@ export default class Home extends Component {
             <Button variant="success" type="submit">
               Submit
             </Button>
+            <Button variant="success" type="button" onClick= {()=> this.props.history.push("./sign-up")}>
+              Sign up
+            </Button>
           </Form>
         </div>
       </Layout>
