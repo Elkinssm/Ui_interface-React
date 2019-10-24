@@ -25,11 +25,10 @@ export default class Home extends Component {
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
+              <Form.Text className="text-disable">
                 We'll never share your email with anyone else.
               </Form.Text>
             </Form.Group>
-
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
@@ -45,7 +44,12 @@ export default class Home extends Component {
             <Button variant="success" type="submit">
               Submit
             </Button>
-            <Button variant="success" type="button" onClick= {()=> this.props.history.push("./sign-up")}>
+            &nbsp;
+            <Button
+              variant="success"
+              type="button"
+              onClick={() => this.props.history.push("./sign-up")}
+            >
               Sign up
             </Button>
           </Form>

@@ -1,16 +1,13 @@
 @import "../variables.scss";
 
-.login {
-  width: 50%;
+.slide {
+  width: 60%;
   background-color: $bg-form;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   padding: 3%;
-  border-radius: 3%;
+  border-radius: 20px;
   color: white;
-  .form {
-    padding: 2%;
-  }
 }
