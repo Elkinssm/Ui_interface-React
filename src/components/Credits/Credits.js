@@ -6,36 +6,22 @@ export default class Credits extends Component {
     super(props);
     this.state = {
       valorPrestamo: 100000,
-      month: 0,
-      textMonth: "Enero"
+      plazo: 1
+      
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleChangeMonth = this.handleChangeMonth.bind(this);
+    this.handleChangePlazo = this.handleChangePlazo.bind(this);
   }
 
   handleChange(event) {
     this.setState({ valorPrestamo: event.target.value });
   }
 
-  handleChangeMonth(event) {
-    const months = [
-      "Enero",
-      "Febrero",
-      "Marzo",
-      "Abril",
-      "Mayo",
-      "Junio",
-      "Julio",
-      "Agosto",
-      "Septiembre",
-      "Octubre",
-      "Noviembre",
-      "Diciembre"
-    ];
-    const textOfMonth = months[event.target.value];
-    this.setState({ textMonth: textOfMonth });
-    this.setState({ month: event.target.month });
+  handleChangePlazo(event) {
+    
+   
+    this.setState({ plazo: event.target.value});
   }
 
   render() {
@@ -62,14 +48,14 @@ export default class Credits extends Component {
             <input
               type="range"
               className="custom-range"
-              min="0"
-              max="11"
+              min="1"
+              max="72"
               step="1"
-              id="customRangeMonths"
-              value={this.state.month}
-              onChange={this.handleChangeMonth}
+              id="customRangePlazo"
+              value={this.state.plazo}
+              onChange={this.handleChangePlazo}
             />
-            <label id="textMonth">{this.state.textMonth}</label>
+            <label id="textMonth">{this.state.plazo}</label>
           </form>
         </div>
       </Layout>
