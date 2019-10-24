@@ -42,10 +42,9 @@ export default class Credits extends Component {
     return (
       <Layout>
         <div className="slide">
+          <h2>Info Credit</h2>
           <form>
-            <label>
-              <h1>Valor Deseado</h1>
-            </label>
+            <label>Valor Deseado</label>
             <input
               type="range"
               className="custom-range"
@@ -57,7 +56,9 @@ export default class Credits extends Component {
               onChange={this.handleChange}
             />
             <label id="valorPrestamo">{this.state.valorPrestamo}</label>
+            <br />
 
+            <label>Plazo</label>
             <input
               type="range"
               className="custom-range"
