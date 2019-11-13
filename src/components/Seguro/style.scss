@@ -1,9 +1,9 @@
 @import "../variables.scss";
 
-.login {
-  margin: 20px;
-  width: 50%;
-  background-color: $bg-form;
+.back {
+  background-color: #253746;
+  border-radius: 50px;
+  width: 70%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -11,7 +11,4 @@
   padding: 3%;
   border-radius: 3%;
   color: white;
-  .form {
-    padding: 2%;
-  }
 }

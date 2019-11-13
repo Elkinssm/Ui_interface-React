@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Layout from "../Layout";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
-import "./style.scss"
+import "./style.scss";
 
 export default class Contact extends Component {
   render() {
@@ -80,7 +80,7 @@ export default class Contact extends Component {
               </Row>
               <br></br>
               <Button variant="success" type="submit">
-                Send
+                Enviar
               </Button>
             </Form>
           </div>

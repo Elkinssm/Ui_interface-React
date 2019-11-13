@@ -5,7 +5,8 @@ import "./style.scss";
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="footer mt-auto py-3 bg-primary">
+      <div className="fondo">
+      <footer className="footer mt-auto py-3 bg-color">
         <span className="text-muted">
           <h5>&nbsp;&nbsp;&nbsp;Created by: Elkin Silva</h5>
           <h5>
@@ -15,6 +16,7 @@ export default class Footer extends Component {
           </h5>
         </span>
       </footer>
+      </div>
     );
   }
 }

@@ -20,29 +20,33 @@ export default class Home extends Component {
     return (
       <Layout>
         <div className="home">
-          <h2>Login</h2>
+          <h2>Ingresar</h2>
           <Form className="col-12" onSubmit={e => this.click(e)}>
             <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Label>Correo Electronico</Form.Label>
+              <Form.Control type="email" placeholder="Ingrese su correo" />
               <Form.Text className="text-disable">
-                We'll never share your email with anyone else.
+                Nunca comparta su infomacion con nadie
               </Form.Text>
             </Form.Group>
             <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+              <Form.Label>Contraseña</Form.Label>
               <Form.Control
                 type="password"
-                placeholder="Password"
+                placeholder="Ingrese su contraseña"
                 autoComplete="on"
                 required
               />
             </Form.Group>
             <Form.Group controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
+              <Form.Check type="checkbox" label="Recordarme" />
             </Form.Group>
-            <Button variant="success" type="submit">
-              Submit
+            <Button
+              variant="success"
+              type="submit"
+              onClick={() => this.props.history.push("./users")}
+            >
+              Enviar
             </Button>
             &nbsp;
             <Button
@@ -50,7 +54,7 @@ export default class Home extends Component {
               type="button"
               onClick={() => this.props.history.push("./sign-up")}
             >
-              Sign up
+              Registrarse
             </Button>
           </Form>
         </div>

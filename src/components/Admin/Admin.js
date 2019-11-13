@@ -10,41 +10,36 @@ export class Users extends Component {
       <Layout>
         <Jumbotron fluid className="move">
           <Container>
-            <h1>Panel de Usuario </h1>
+            <h1>Panel de Administrador</h1>
             <Card style={{ width: "18rem" }} className="img-bg">
               <Card.Img
                 variant="top"
-                src="https://image.flaticon.com/icons/svg/149/149071.svg"
+                src="https://image.flaticon.com/icons/svg/1118/1118898.svg"
               />
               <Card.Body className="card-body">
-                <Card.Title>Usuario</Card.Title>
-                <Card.Text>Datos usuario</Card.Text>
+                <Card.Title>Admin</Card.Title>
+                <Card.Text>Datos administrador</Card.Text>
               </Card.Body>
             </Card>
-            <div className="txtmove">
-              <p>
-                Administre todos sus vehiculos registrados,
-                <br /> cotize y registre sus diferente
-                <br />
-                polizas adquiridas con nosotros.
-              </p>
-            </div>
+            <p>
+              Administre todos los vehiculos
+              <br /> y polizas registrados en el sistema
+            </p>
           </Container>
-          <Table striped bordered hover variant="dark" className="tab">
+          <Table striped bordered hover variant="dark" className="tb">
             <thead>
               <tr>
                 <th>#</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Username</th>
-                <th>Todo</th>
                 <th>Add</th>
+                <th>Delete</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
-
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
@@ -56,8 +51,16 @@ export class Users extends Component {
                     +
                   </button>
                 </td>
+                <td>
+                  <button
+                    id="red"
+                    type="button"
+                    class="btn rounded-circle d-flex justy-content-center"
+                  >
+                    -
+                  </button>
+                </td>
               </tr>
-
               <tr>
                 <td>2</td>
                 <td>Jacob</td>
@@ -71,18 +74,35 @@ export class Users extends Component {
                     +
                   </button>
                 </td>
+                <td>
+                  <button
+                    id="red"
+                    type="button"
+                    class="btn rounded-circle d-flex align-content-center"
+                  >
+                    -
+                  </button>
+                </td>
               </tr>
               <tr>
                 <td>3</td>
-                <td>Larry the Bird</td>
-                <td>Last</td>
+                <td colSpan="2">Larry the Bird</td>
                 <td>@twitter</td>
                 <td>
                   <button
                     type="button"
-                    class="btn  rounded-circle d-flex align-content-center"
+                    class="btn rounded-circle d-flex align-content-center"
                   >
                     +
+                  </button>
+                </td>
+                <td>
+                  <button
+                    id="red"
+                    type="button"
+                    class="btn rounded-circle d-flex align-content-center"
+                  >
+                    -
                   </button>
                 </td>
               </tr>
